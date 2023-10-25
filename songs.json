@@ -1,0 +1,37 @@
+{
+    "song1" : {
+       "song" : "Cariño",
+       "artist" : "The Marías",
+       "genre" : "Indie Pop",
+       "link": "https://www.youtube.com/watch?v=QHVp9xiUr9U"
+    },
+
+    "song2" : {
+        "song" : "Home",
+        "artist" : "Edith Whiskers",
+        "genre" : "Folk",
+        "link": "https://www.youtube.com/watch?v=wcHPJqYBZ4M"
+     },
+     
+     "song3" : {
+        "song" : "The Way You Look Tonight",
+        "artist" : "Michael Bublé",
+        "genre" : "Jazz",
+        "link": "https://www.youtube.com/watch?v=IKpNL2Nm9SM"
+     },
+
+     "song4" : {
+        "song" : "Nakauwi Na",
+        "artist" : "Ang Bandang Shirley",
+        "genre" : "Alternative Punk Rock",
+        "link": "https://www.youtube.com/watch?v=KXFpaaFX9NA"
+     },
+
+     "song5" : {
+        "song" : "Seguro Te Pierdo",
+        "artist" : "KID FLEX, Sergi",
+        "genre" : "Rap",
+        "link": "https://www.youtube.com/watch?v=Zd1Flawc1-I"
+     }
+
+}
