@@ -2,49 +2,47 @@ var express = require('express');
 var app = express();
 var fs = require("fs");
 
-app.get('/listSongs', function (req, res) {
-   fs.readFile( __dirname + "/" + "songs.json", 'utf8', function (err, data) {
+app.get('/getMovies', function (req, res) {
+   fs.readFile( __dirname + "/" + "movies.json", 'utf8', function (err, data) {
       console.log( data );
       res.end( data );
    });
 })
 
-var song = {
-    "song6" : {
-        "song" : "I Love You So",
-        "artist" : "The Walters",
-        "genre" : "Indie Pop",
-        "link": "https://www.youtube.com/watch?v=kYNTrRVHNmk"
-     }
+var movie = {
+   "movie6" : {
+      "title" : "The Perks of Being a Wallflower",
+      "actor" : "Logan Lerman",
+      "genre" : "Drama",
+      "IMDB": "https://www.imdb.com/title/tt1659337/?ref_=nv_sr_srsg_0_tt_7_nm_1_q_the%2520perks"
+   }
  }
  
- app.post('/addSong', function (req, res) {
+ app.post('/addMovie', function (req, res) {
     // First read existing users.
-    fs.readFile( __dirname + "/" + "songs.json", 'utf8', function (err, data) {
+    fs.readFile( __dirname + "/" + "movies.json", 'utf8', function (err, data) {
        data = JSON.parse( data );
-       data["song6"] = song["song6"];
+       data["movie6"] = movie["movie6"];
        console.log( data );
        res.end( JSON.stringify(data));
     });
  })
 
- app.get('/:id', function (req, res) {
+ app.get('/getMovie:id', function (req, res) {
     // First read existing users.
-    fs.readFile( __dirname + "/" + "songs.json", 'utf8', function (err, data) {
-       var songs = JSON.parse( data );
-       var song = songs["song" + req.params.id] 
-       console.log( song );
-       res.end( JSON.stringify(song));
+    fs.readFile( __dirname + "/" + "movies.json", 'utf8', function (err, data) {
+       var movies = JSON.parse( data );
+       var movie = movies["movie" + req.params.id] 
+       console.log( movie );
+       res.end( JSON.stringify(movie));
     });
  })
 
- var id = 2;
-
-app.delete('/deleteSong', function (req, res) {
+app.delete('/deleteMovie:id', function (req, res) {
    // First read existing users.
-   fs.readFile( __dirname + "/" + "songs.json", 'utf8', function (err, data) {
+   fs.readFile( __dirname + "/" + "movies.json", 'utf8', function (err, data) {
       data = JSON.parse( data );
-      delete data["song" + 2];
+      delete data["movie" + req.params.id];
        
       console.log( data );
       res.end( JSON.stringify(data));
