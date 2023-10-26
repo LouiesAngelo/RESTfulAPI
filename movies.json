@@ -1,37 +1,37 @@
 {
-    "song1" : {
-       "song" : "Cariño",
-       "artist" : "The Marías",
-       "genre" : "Indie Pop",
-       "link": "https://www.youtube.com/watch?v=QHVp9xiUr9U"
-    },
+    "movie1" : {
+         "title" : "The Hunger Games",
+         "actor" : "Jennifer Lawrence",
+         "genre" : "SciFi",
+         "IMDB": "https://www.imdb.com/title/tt1392170/?ref_=nv_sr_srsg_0_tt_7_nm_1_q_hunger%2520"
+      },
 
-    "song2" : {
-        "song" : "Home",
-        "artist" : "Edith Whiskers",
-        "genre" : "Folk",
-        "link": "https://www.youtube.com/watch?v=wcHPJqYBZ4M"
-     },
+    "movie2" : {
+         "title" : "Divergent",
+         "actor" : "Shailene Woodley",
+         "genre" : "SciFi",
+         "IMDB": "https://www.imdb.com/title/tt1840309/?ref_=nv_sr_srsg_1_tt_7_nm_1_q_diver"
+      },
      
-     "song3" : {
-        "song" : "The Way You Look Tonight",
-        "artist" : "Michael Bublé",
-        "genre" : "Jazz",
-        "link": "https://www.youtube.com/watch?v=IKpNL2Nm9SM"
-     },
+     "movie3" : {
+         "title" : "The Maze Runner",
+         "actor" : "Dylan O'Brien",
+         "genre" : "SciFi",
+         "IMDB": "https://www.imdb.com/title/tt1790864/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_maze"
+      },
 
-     "song4" : {
-        "song" : "Nakauwi Na",
-        "artist" : "Ang Bandang Shirley",
-        "genre" : "Alternative Punk Rock",
-        "link": "https://www.youtube.com/watch?v=KXFpaaFX9NA"
-     },
+     "movie4" : {
+         "title" : "Percy Jackson & the Olympians: The Lightning Thief",
+         "actor" : "Logan Lerman",
+         "genre" : "Fantasy",
+         "IMDB": "https://www.imdb.com/title/tt0814255/?ref_=nv_sr_srsg_3_tt_8_nm_0_q_percy%2520jack"
+      },
 
-     "song5" : {
-        "song" : "Seguro Te Pierdo",
-        "artist" : "KID FLEX, Sergi",
-        "genre" : "Rap",
-        "link": "https://www.youtube.com/watch?v=Zd1Flawc1-I"
-     }
+     "movie5" : {
+         "title" : "Harry Potter and the Prisoner of Azkaban",
+         "actor" : "Daniel Radcliffe",
+         "genre" : "Fantasy",
+         "IMDB": "https://www.imdb.com/title/tt0304141/?ref_=nv_sr_srsg_6_tt_8_nm_0_q_harry%2520potter"
+      }
 
 }
